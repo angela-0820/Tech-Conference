@@ -1,0 +1,34 @@
+.hero {
+    background: url('images/banner.jpg')no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 80vh; /* Adjust as desired */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Optional: Dark overlay on hero to improve text visibility */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+
+  .hero-content {
+    z-index: 2; /* Make sure text is above the overlay */
+  }
+  
+  /* Optional: remove grayscale on hover */
+  .card:hover {
+    transition: filter 0.5s ease;
+    box-shadow:  5px 10px #888888;
+    color: blue;
+  }
