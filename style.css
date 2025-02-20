@@ -27,8 +27,33 @@
   }
   
   /* Optional: remove grayscale on hover */
-  .card:hover {
-    transition: filter 0.5s ease;
-    box-shadow:  5px 10px #888888;
-    color: blue;
+  .hover-card {
+    position: relative;
+    overflow: hidden; /* Ensures the zoomed image doesn't spill outside */
   }
+  
+  .hover-card img {
+    transition: transform 0.4s ease;
+  }
+  
+  .hover-card:hover {
+    transform: scale(1.06); /* Zoom factor on hover */
+  }
+  
+  /* Overlay covers the entire image area */
+  .hover-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+    opacity: 0;                           /* start hidden */
+    transition: opacity 0.4s ease;
+  }
+  
+  /* Fade overlay in on hover */
+  .hover-card:hover .overlay {
+    opacity: 1;
+  }
+  
