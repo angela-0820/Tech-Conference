@@ -33,3 +33,152 @@
             </div>
         </nav>
     </header>
+    <!-- MAIN CONTENT -->
+    <main class="container my-5 pt-5">
+        <section class="row justify-content-center">
+            <section class="col-md-8">
+                <h1 class="mb-3">Register for TechForward 2024</h1>
+                <p class="text-muted">Please fill out the form below to register for the event.</p>
+
+                <!-- Registration Form -->
+                <form>
+                    <section class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Enter full name">
+                    </section>
+                    <section class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </section>
+                    <!-- Phone Number -->
+                    <section class="mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number">
+                    </section>
+
+                    <!-- Attendance Type -->
+                    <section class="mb-3">
+                        <label class="form-label d-block">Attendance Type</label>
+                        <section class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="attendanceType" id="virtualOption"
+                                value="virtual" checked>
+                            <label class="form-check-label" for="virtualOption">Virtual</label>
+                        </section>
+                        <section class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="attendanceType" id="inPersonOption"
+                                value="in-person">
+                            <label class="form-check-label" for="inPersonOption">In-Person</label>
+                        </section>
+                    </section>
+
+                    <!-- Session Interest -->
+                    <section class="mb-3">
+                        <label for="sessionInterest" class="form-label">Session Interest</label>
+                        <select class="form-select" id="sessionInterest">
+                            <option selected>Technology Trends</option>
+                            <option value="ai-robotics">Software Development</option>
+                            <option value="cloud-devops">Cybersecurity</option>
+                            <option value="quantum-computing">Data Science</option>
+                            <option value="quantum-computing">Cloud Computing</option>
+                        </select>
+                    </section>
+
+                    <!-- Number of Tickets -->
+                    <section class="mb-3">
+                        <label for="tickets" class="form-label">Number of Tickets</label>
+                        <input type="number" class="form-control" id="tickets" placeholder="How many tickets?" min="1">
+                    </section>
+
+                    <!-- Arrival Date (type="date" or a placeholder) -->
+                    <section class="mb-3">
+                        <label for="arrivalDate" class="form-label">Arrival Date</label>
+                        <input type="date" class="form-control" id="arrivalDate" placeholder="mm/dd/yyyy">
+                    </section>
+
+                    <!-- Additional Information -->
+                    <section class="mb-3">
+                        <label for="additionalInfo" class="form-label">Additional Information</label>
+                        <textarea class="form-control" id="additionalInfo" rows="3"
+                            placeholder="Any additional information or requirements"></textarea>
+                    </section>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">
+                        Submit
+                    </button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="py-5" style="background-color: #f8f9fa;">
+        <section class="container">
+            <section class="row">
+                <!-- Social Media Links -->
+                <article class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-2 text-secondary">Follow us on social media:</p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="https://x.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-twitter px-2"></i>Twitter</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-facebook px-2"></i>Facebook</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-instagram px-2"></i>Instagram</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://al.linkedin.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-linkedin px-2"></i>LinkedIn</a>
+                        </li>
+                    </ul>
+                </article>
+                <!-- Quick Links -->
+                <article class="col-md-6 text-md text-secondary">
+                    <p class="mb-2">Quick links:</p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="home.html" class="text-decoration-none text-primary">Home</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="about.html" class="text-decoration-none text-primary">About</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="schedule.html" class="text-decoration-none text-primary">Schedule</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="speakers.html" class="text-decoration-none text-primary">Speakers</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="register.html" class="text-decoration-none text-primary">Register</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="contact.html" class="text-decoration-none text-primary">Contact Us</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+
+        <section class="container mt-5">
+            <section class="row align-items-center">
+                <article class="col-12 col-md-6 text-center mb-2 mb-md-0">
+                    <p class="text-muted mb-0">TechForward 2024 &copy; All rights reserved.</p>
+                </article>
+                <!-- Right-aligned link -->
+                <article class="col-12 col-md-6 text-md-end text-center">
+                    <a href="#top" class="text-decoration-none text-primary">Back to top</a>
+                </article>
+            </section>
+        </section>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
