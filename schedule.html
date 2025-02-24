@@ -6,6 +6,8 @@
     <title>TechForward 2024</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,3 +35,314 @@
             </div>
         </nav>
     </header>
+    <!-- MAIN CONTENT -->
+    <main class="container my-5 pt-5">
+        <h1 class="mb-1 text-center">Conference Schedule</h1>
+        <p class="text-muted text-center">Explore the detailed agenda for TechForward 2024.</p>
+
+        <!-- Tabs: Day 1 & Day 2 -->
+        <ul class="nav nav-tabs" id="scheduleTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="day1-tab" data-bs-toggle="tab" data-bs-target="#day1" type="button"
+                    role="tab" aria-controls="day1" aria-selected="true">
+                    Day 1
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="day2-tab" data-bs-toggle="tab" data-bs-target="#day2" type="button"
+                    role="tab" aria-controls="day2" aria-selected="false">
+                    Day 2
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <section class="tab-content" id="scheduleTabsContent">
+
+            <!-- DAY 1 TABLE -->
+            <section class="tab-pane fade  show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+                <section class="table-responsive mt-4">
+                    <table class="table align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col" style="width:15%">Time</th>
+                                <th scope="col" style="width:35%">Session</th>
+                                <th scope="col" style="width:20%">Speaker</th>
+                                <th scope="col" style="width:15%">Location</th>
+                                <th scope="col" style="width:15%">Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-light">
+                                <td>09:00 - 10:00</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-robot"></i>
+                                    Opening Keynote: The future of Robotics
+                                </td>
+                                <td>Emily Hart</td>
+                                <td>Main Hall</td>
+                                <td>
+                                    <span class="badge bg-primary">
+                                        <i class="fa fab fa-solid fa-microphone"></i> Keynote
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>10:00 - 10:15</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-coffee"></i> Coffee Break
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10:15 - 11:15</td>
+                                <td>
+                                    <i class="fa fab fa-brands fa-cloud"></i> Cloud Computing: Next-Gen Architectures
+                                </td>
+                                <td>Ethan Wallace</td>
+                                <td>Conference Room A</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-chalkboard-teacher"></i> Talk
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11:30 - 12:30</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-brain"></i> Quantum Computing: Demystifying the Future
+                                </td>
+                                <td>David Miller</td>
+                                <td>Conference Room B</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-chalkboard-teacher"></i> Talk
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>12:30 - 14:30</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-utensils"></i> Lunch Break
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14:30 - 15:30</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-robot"></i> AI for a Better Tomorrow
+                                </td>
+                                <td>Lily Zhang</td>
+                                <td>Main Hall</td>
+                                <td>
+                                    <span class="badge bg-primary">
+                                        <i class="fa fab fa-solid fa-microphone"></i> Keynote
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:30</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-lock"></i> Cloud Security Essentials
+                                </td>
+                                <td>Michael Anderson</td>
+                                <td>Conference Room A</td>
+                                <td>
+                                    <span class="badge bg-primary">
+                                        <i class="fa fab fa-solid fa-microphone"></i> Keynote
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <!-- DAY 2 TABLE -->
+            <section class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                <section class="table-responsive mt-4">
+                    <table class="table align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col" style="width:15%">Time</th>
+                                <th scope="col" style="width:35%">Session</th>
+                                <th scope="col" style="width:20%">Speaker</th>
+                                <th scope="col" style="width:15%">Location</th>
+                                <th scope="col" style="width:15%">Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09:00 - 10:00</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-seedling"></i>
+                                    Innovations in Environmental Tech
+                                </td>
+                                <td>Christopher Brooks</td>
+                                <td>Main Hall</td>
+                                <td>
+                                    <span class="badge bg-primary">
+                                        <i class="fa fab fa-solid fa-microphone"></i> Keynote
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>10:00 - 10:15</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-coffee"></i> Coffee Break
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10:15 - 11:15</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-users"></i>
+                                    Empowering Diversity in Tech
+                                </td>
+                                <td>Naomi Rivera</td>
+                                <td>Conference Room A</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-chalkboard-teacher"></i> Workshop
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11:30 - 12:30</td>
+                                <td>
+                                    <i class="fas fa-headset"></i>
+                                    Exploring Virtual Reality in Education
+                                </td>
+                                <td>Michael Anderson</td>
+                                <td>Conference Room B</td>
+                                <td>
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-chalkboard-teacher"></i> Workshop
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>12:30 - 14:30</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-utensils"></i> Lunch Break
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14:30 - 15:30</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-cloud"></i>
+                                    Cloud Computing: Scalability &amp; Efficiency
+                                </td>
+                                <td>Ethan Wallace</td>
+                                <td>Main Hall</td>
+                                <td>
+                                    <span class="badge bg-primary">
+                                        <i class="fa fab fa-solid fa-microphone"></i> Keynote
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15:30 - 16:30</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-brain"></i>
+                                    AI Innovations: Ethical Implications
+                                </td>
+                                <td>Lily Zhang</td>
+                                <td>Conference Room A</td>
+                                <td>
+                                    <span class="badge bg-primary text-white">
+                                        <i class="fas fa-chalkboard-teacher"></i> Talk
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td>16:30 - 17:00</td>
+                                <td>
+                                    <i class="fa fab fa-solid fa-handshake"></i>
+                                    Closing Statement
+                                </td>
+                                <td>Event Organizers</td>
+                                <td>Main Hall</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="py-4" style="background-color: #f8f9fa;">
+        <section class="container">
+
+            <section class="row">
+                <!-- Social Media Links -->
+                <article class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-2 text-secondary">Follow us on social media:</p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="https://x.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-facebook"></i>Facebook</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://al.linkedin.com/" class="text-decoration-none text-primary"><i
+                                    class="fab fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Quick Links -->
+                <article class="col-md-6 text-md text-secondary">
+                    <p class="mb-2">Quick links:</p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a href="home.html" class="text-decoration-none text-primary">Home</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="about.html" class="text-decoration-none text-primary">About</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="schedule.html" class="text-decoration-none text-primary">Schedule</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="speakers.html" class="text-decoration-none text-primary">Speakers</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="register.html" class="text-decoration-none text-primary">Register</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="contact.html" class="text-decoration-none text-primary">Contact Us</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <p class="text-muted text-md-end mt-5 text-center">TechForward 2024 &copy; All rights reserved.</p>
+
+        <a href="#top" class="ms-5 mb-2 ">Back to top</a>
+        </section>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
