@@ -3,3 +3,28 @@
 @use 'abstracts/variables';
 @use 'abstracts/mixins';
 
+.hero {
+    background: url("images/banner.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 80vh;
+    text-align: center;
+}
+
+.hover-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-card img {
+    transition: transform 0.4s ease;
+}
+
+.hover-card:hover {
+    transform: scale(1.06);
+    color: blue;
+}
+
+.hover-card:hover .overlay {
+    opacity: 1;
+}
